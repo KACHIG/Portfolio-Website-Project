@@ -53,3 +53,19 @@ function showSlides(n) {
   setTimeout(showSlides, 4000);
 } 
 
+const audio = document.getElementById("backgroundMusic");
+
+
+const audioQuery = document.querySelector("audio");
+window.addEventListener("DOMContentLoaded", event => {
+    audioQuery.volume = 0.1;
+});
+
+function audioController() {
+    if (!audio.paused) {
+        audio.pause();
+    }
+    else {
+        audio.play();
+    }
+}

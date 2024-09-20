@@ -7,8 +7,19 @@
     <title>Portfolio Website</title>
 </head>
 <body>
+    <div class="backgroundcontainer">
+        <video id="background" muted autoplay loop>
+            <source src="./resources/Makna Falls at night.mp4" type="video/mp4"></src>
+        </video>
+
+        <audio id="backgroundMusic" class="bgm" src="./resources/Looking Up at the Sky.mp3" loop></audio>
+    </div>
+
     <div class="header">
-        <div class="title">Header Logo</div>
+        <div class="left-bar">
+            <div class="title">Header Logo</div>
+            <img id = "audioController" src = "./images/Speaker_Icon.png" onclick = "audioController();">
+        </div>
         <div class="topnav">
             <a href="" class="headerlink1">link one</a>
             <a href="" class="headerlink2">link two</a>
@@ -65,7 +76,7 @@
 
     <div class="layer2">
         <div class="layer2container">
-            <div class="layer2header">Members of the Special Support Section</div>
+            <div class="layer2header">Layer 2</div>
             <div class="layer2info">
                 <div class="lloyinfo">
                     <a href="https://youtu.be/k_PACUeZcFY"><img class="lloydimage" src="images/lloyd2.png"></a>
@@ -87,10 +98,24 @@
         </div>
     </div>
 
+    <div class="layer3">
+        <div class="layer3container">
+            <img class="layer3image" src="images/lloyd_expression.png">
+            <div class="layer3text">
+                <div class="layer3quote">
+                    "If fishing at a hospital is wrong, I don't want to be right."
+                </div>
+                <div class="layer3qouteend">
+                    -Lloyd Bannings
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="footer">
-        <a href="https://github.com/KACHIG/Landing-Page">
+        <a href="https://github.com/KACHIG/Portfolio-Website-Project">
             <div class="footertext">
-                Website by: KACHIG
+                Website by: Jose
             </div>
         </a>
         <img class="footerimage" src="./images/tako_luka.png">

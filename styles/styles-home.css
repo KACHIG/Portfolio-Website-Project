@@ -5,6 +5,17 @@ body {
     justify-content: center;
 }
 
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2; 
+}
+
+
 .header {
     position: sticky;
     top: 0;
@@ -15,17 +26,34 @@ body {
     background-image: linear-gradient(#080404, #0180c7);
     color: white;
     z-index: 10;
-} 
+}
+
+.left-bar {
+    display: flex;
+    flex-direction: row;
+}
 
 .title {
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 75px;
 }
 
 .title {
     font-size: 35px;
 }
 
+#audioController {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 0 1em 0 2em;
+    transition: 0.3s;
+}
+
+#audioController:hover {
+    transform: scale(1.30);
+}
 
 .topnav {
     position: relative;
@@ -316,6 +344,47 @@ a:hover {
     box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
+.layer3 {
+    background-image: url('../images/sky.png');
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer3container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    gap: 16px;
+    background-color: #1f293796;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.layer3text {
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+    font-size: 36px;
+    gap: 16px;
+    text-shadow: black 2px 5px 2px;
+}
+
+.layer3qouteend {
+    text-align: end;
+}
+
+.layer3image {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(6px 10px 2px rgb(0, 0, 0));
+}
+
 
 .footer {
     background-image: url('../images/sky_banner.png');
@@ -365,7 +434,7 @@ a:hover {
 .footerimage {
     width: 40px;
     height: 40px;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 @media (max-width: 1100px) {
